@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Sustos que dan gusto!</title>
+    <style>
+        /* Diseño general de la página */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #e5e5f7; /* Un fondo suave con patrón */
+            opacity: 1;
+            background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* El contenedor blanco central */
+        .card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* Estilo de la imagen */
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Título principal */
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        /* Texto del párrafo */
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Estilo para resaltar "Littigio" */
+        .brand-name {
+            color: #444cf7; /* Un color azul vibrante */
+            font-weight: bold;
+        }
+
+        /* Estilo del botón de WhatsApp */
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Verde oficial de WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Efecto al pasar el mouse por el botón */
+        .whatsapp-button:hover {
+            background-color: #1da851;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="image_0.png" alt="Meme Sustos que dan gusto">
+        
+        <h1>¿Caíste?</h1>
+        
+        <p>
+            Tranquil@, el Examen está bien quieto por ahora... pero si caíste entre los que lo reprobaron, escríbenos y te ayudamos a prepararte.<br><br>
+            ¡En <span class="brand-name">Littigio</span> te esperamos!
+        </p>
+        
+        <a href="https://api.whatsapp.com/send?phone=573132342582" class="whatsapp-button" target="_blank">
+            Escríbenos ahora
+        </a>
+    </div>
+
+</body>
+</html>
